@@ -1,14 +1,14 @@
 fun main(){
     var account=Account("Rehema", "you have remain with",30000)
 
-    account.Deposit(2000)
-    account.Borrow(10000)
+    account.Deposit(5500)
+    account.Borrow(15000)
 
 
 
 
 }
-class Account(var Name: String, var description: String, var Amount: Int) {
+class Account(var name: String, var description: String, var amount: Int) {
 
     fun withdraw(money: Int) {
         println(money)
@@ -20,13 +20,13 @@ class Account(var Name: String, var description: String, var Amount: Int) {
     }
 
     fun Borrow(lend: Int): Int {
-        var p = Amount - lend
+        var x = Amount - lend
         if (lend <= Amount) {
             println("you have recieved $lend")
         } else {
             println("Denied Loan of $lend")
         }
-        return p
+        return x
     }
 }
 
