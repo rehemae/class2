@@ -1,5 +1,5 @@
 fun main(){
-    var account=Account("Rehema", "you have remain with",30000)
+    var account=Account("Sabdio", "you have remain with",30000)
 
     account.Deposit(5500)
     account.Borrow(15000)
